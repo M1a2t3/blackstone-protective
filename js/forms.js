@@ -129,12 +129,44 @@ const initForm = ({ formId, type, onSuccess }) => {
     }
 
     /* ── Build payload ── */
-    const fd = new FormData(formEl);
+    // Manually extract all named text/select/textarea fields.
+    // NOTE: We cannot use FormData + JSON.stringify to pass File objects —
+    // FormData serialises File entries as "[object File]" which is useless.
+    // Instead we extract text fields manually here, then read the file
+    // separately below using FileReader.
     const payload = {};
-    fd.forEach((v, k) => { if (k !== 'website') payload[k] = v; }); // exclude honeypot
-    payload._type = type;
+    formEl.querySelectorAll('input, select, textarea').forEach(el => {
+      if (!el.name || el.name === 'website' || el.type === 'file') return;
+      payload[el.name] = el.value;
+    });
+    payload._type    = type;
     payload._captcha = captchaToken;
-    payload._ts = new Date().toISOString();
+    payload._ts      = new Date().toISOString();
+
+    /* ── Read uploaded CV as base64 and add to payload ── */
+    // The file input is hidden inside .file-upload-area; we target it by type.
+    const cvInput = formEl.querySelector('input[type="file"]');
+    if (cvInput && cvInput.files && cvInput.files[0]) {
+      const cvFile = cvInput.files[0];
+      try {
+        // FileReader.readAsDataURL() produces a base64 data URI string:
+        // "data:<mimeType>;base64,<base64data>"
+        // The backend strips the prefix and decodes the base64 bytes.
+        const base64DataUrl = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload  = () => resolve(reader.result);
+          reader.onerror = () => reject(reader.error);
+          reader.readAsDataURL(cvFile);
+        });
+        payload._cv_base64   = base64DataUrl;           // full data URI including prefix
+        payload._cv_filename = cvFile.name;             // e.g. "john_doe_cv.pdf"
+        payload._cv_mime     = cvFile.type || 'application/octet-stream';
+        console.log('[CV] File encoded for upload:', cvFile.name, '(' + Math.round(base64DataUrl.length / 1024) + ' KB base64)');
+      } catch (fileErr) {
+        console.warn('[CV] FileReader error — continuing without CV attachment:', fileErr);
+        // Do not block submission; the backend will note "(No CV uploaded)"
+      }
+    }
 
     /* ── TIER 4: Obfuscated endpoint submission ── */
     setLoading(true);

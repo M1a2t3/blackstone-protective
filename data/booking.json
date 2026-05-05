@@ -1,0 +1,50 @@
+{
+  "page_hero": {
+    "overline": "Get In Touch",
+    "title": "Book a Security Consultation",
+    "subtitle": "Tell us about your security requirements. A specialist will respond within 4 business hours with a tailored assessment and proposal."
+  },
+  "info": {
+    "title": "What to Expect",
+    "body": "Our process is simple, confidential, and commitment-free. We listen first, then design.",
+    "features": [
+      {
+        "icon": "🔍",
+        "title": "Free Risk Assessment",
+        "body": "We evaluate your current risk exposure and identify gaps in your security posture."
+      },
+      {
+        "icon": "📋",
+        "title": "Bespoke Proposal",
+        "body": "Within 48 hours, you receive a detailed security plan and transparent pricing — no hidden costs."
+      },
+      {
+        "icon": "⚡",
+        "title": "72-Hour Deployment",
+        "body": "Approved engagements can be operationalised within 72 hours of contract signing."
+      },
+      {
+        "icon": "🤝",
+        "title": "Dedicated Account Manager",
+        "body": "One point of contact throughout — from initial inquiry to ongoing management."
+      }
+    ],
+    "contact_label": "Prefer to call or email directly?",
+    "phone": "+234 800 000 0000",
+    "email": "info@blackstoneprotective.com"
+  },
+  "form": {
+    "title": "Enquiry Form",
+    "subtitle": "All information is treated with absolute confidentiality.",
+    "services": [
+      "Manned Guarding",
+      "Executive Protection",
+      "Event Security",
+      "Electronic Security (CCTV / Access Control)",
+      "K9 Unit Deployment",
+      "Security Consulting",
+      "Multiple Services"
+    ],
+    "urgency_options": ["Standard (within 2 weeks)", "Expedited (within 72 hours)", "Emergency (immediate)"]
+  }
+}

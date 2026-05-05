@@ -1,0 +1,83 @@
+{
+  "page_hero": {
+    "overline": "About Us",
+    "title": "About Blackstone Protective",
+    "subtitle": "Blackstone Protective is a leading security solutions provider based in Nigeria. We specialize in delivering comprehensive, reliable, and innovative protective services to individuals, businesses, and organizations across the country."
+  },
+  "opening_paragraph": "Blackstone Protective is a leading security solutions provider based in Nigeria. We specialize in delivering comprehensive, reliable, and innovative protective services to individuals, businesses, and organizations across the country. At Blackstone Protective, we understand that security is not just about protection it is about peace of mind. Founded with a vision to set new standards in the Nigerian security industry, we combine advanced technology, highly trained personnel, and strategic intelligence to safeguard what matters most to our clients.",
+  "who_we_are": {
+    "title": "Who We Are",
+    "body": "We are a team of seasoned security professionals with extensive experience in both private and public sector protection. Our operatives are rigorously trained, vetted, and equipped to handle a wide range of security challenges in Lagos and beyond. From executive protection and corporate security to residential guarding, event security, and risk assessment, we provide tailored solutions that meet the unique needs of each client. Our name, Blackstone, draws inspiration from strength, resilience, and unyielding protection qualities we embody in every service we deliver. We operate with integrity, professionalism, and a deep commitment to exceeding client expectations.",
+    "image": "/images/uploads/about-security-badge.jpeg",
+    "image_alt": "Security operative in black uniform with SECURITY badge",
+    "image2": "/images/uploads/about-operative-arms-crossed.jpeg",
+    "image2_alt": "Security operative in black uniform with arms crossed against dark background"
+  },
+  "mission": {
+    "icon": "🎯",
+    "title": "Our Mission",
+    "body": "To provide world-class security services that protect lives, assets, and reputations in an ever-evolving threat landscape. We strive to be the most trusted security partner in Nigeria by delivering proactive, intelligent, and responsive protection."
+  },
+  "vision": {
+    "icon": "🔭",
+    "title": "Our Vision",
+    "body": "To redefine security standards in Nigeria through innovation, excellence, and unwavering dedication to client safety."
+  },
+  "values": {
+    "icon": "⚖️",
+    "title": "Our Values",
+    "body": "Integrity without compromise. Professionalism in every encounter. Loyalty to every client. Continuous innovation in how we protect. These are not aspirations — they are the daily standard we hold ourselves to."
+  },
+  "story_section": {
+    "overline": "Company Background",
+    "title": "Built on Discipline. Driven by Purpose.",
+    "paragraphs": [
+      "Blackstone Protective is a leading security solutions provider based in Nigeria. We specialize in delivering comprehensive, reliable, and innovative protective services to individuals, businesses, and organizations across the country.",
+      "At Blackstone Protective, we understand that security is not just about protection it is about peace of mind. Founded with a vision to set new standards in the Nigerian security industry, we combine advanced technology, highly trained personnel, and strategic intelligence to safeguard what matters most to our clients.",
+      "We are a team of seasoned security professionals with extensive experience in both private and public sector protection. Our operatives are rigorously trained, vetted, and equipped to handle a wide range of security challenges in Lagos and beyond. From executive protection and corporate security to residential guarding, event security, and risk assessment, we provide tailored solutions that meet the unique needs of each client.",
+      "Our name, Blackstone, draws inspiration from strength, resilience, and unyielding protection qualities we embody in every service we deliver. We operate with integrity, professionalism, and a deep commitment to exceeding client expectations."
+    ],
+    "image": "/images/uploads/about-city-security-digital.jpeg",
+    "image_alt": "City skyline at night with digital security shield overlays"
+  },
+  "why_choose": {
+    "overline": "Why Choose Us",
+    "title": "Why Choose Blackstone Protective?",
+    "subtitle": "Whether you are a corporate organization seeking robust perimeter security, a high-net-worth individual requiring close protection, or an event organizer needing crowd management, Blackstone Protective delivers dependable security that allows you to focus on what you do best — growing your business and living your life with confidence.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Highly Trained Personnel",
+        "body": "Our guards and operatives undergo continuous training in modern security techniques, conflict de-escalation, first aid, and customer service."
+      },
+      {
+        "number": "02",
+        "title": "Advanced Technology",
+        "body": "We integrate cutting-edge surveillance systems, GPS tracking, rapid response protocols, and intelligent monitoring to stay ahead of threats."
+      },
+      {
+        "number": "03",
+        "title": "Local Expertise with Global Standards",
+        "body": "Deep understanding of the Lagos and Nigerian security environment, combined with international best practices."
+      },
+      {
+        "number": "04",
+        "title": "24/7 Rapid Response",
+        "body": "Our operations center ensures immediate support whenever and wherever you need it."
+      },
+      {
+        "number": "05",
+        "title": "Customized Solutions",
+        "body": "We don't offer one-size-fits-all services. Every protection plan is designed specifically for your risks, budget, and operational needs."
+      },
+      {
+        "number": "06",
+        "title": "Integrity & Transparency",
+        "body": "We build long-term relationships based on trust, accountability, and measurable results."
+      }
+    ]
+  },
+  "closing_paragraph": "Whether you are a corporate organization seeking robust perimeter security, a high-net-worth individual requiring close protection, or an event organizer needing crowd management, Blackstone Protective delivers dependable security that allows you to focus on what you do best — growing your business and living your life with confidence. Protecting Tomorrow, Today.",
+  "operatives_image": "/images/uploads/about-operative-arms-crossed.jpeg",
+  "operatives_image_alt": "Blackstone security team"
+}

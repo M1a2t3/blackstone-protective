@@ -1,0 +1,56 @@
+{
+  "site_name": "Blackstone Protective Service Ltd",
+  "logo_image": "/images/uploads/logo.png",
+  "logo_alt": "Blackstone Protective Service Ltd Logo",
+  "tagline": "Elite Security. Uncompromising Protection.",
+  "phone": "09019724219",
+  "email": "info@blackstoneprotective.com",
+  "address": "No 9 Atunrase Street, Surulere, Lagos State, Nigeria",
+  "whatsapp": "+2348000000000",
+  "nav_links": [
+    {
+      "label": "Home",
+      "url": "/",
+      "id": "nav-home"
+    },
+    {
+      "label": "About",
+      "url": "/about.html",
+      "id": "navS-about"
+    },
+    {
+      "label": "Services",
+      "url": "/#services",
+      "id": "nav-services"
+    },
+    {
+      "label": "Careers",
+      "url": "/careers.html",
+      "id": "nav-careers"
+    },
+    {
+      "label": "Contact",
+      "url": "/booking.html",
+      "id": "nav-contact"
+    }
+  ],
+  "footer_tagline": "Protecting people, assets, and reputations across Nigeria and beyond.",
+  "footer_copyright": "© 2025 Blackstone Protective Service Ltd. All rights reserved.",
+  "social_links": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/company/blackstone-protective",
+      "icon": "in"
+    },
+    {
+      "platform": "X",
+      "url": "https://x.com/blackstoneprotective",
+      "icon": "𝕏"
+    },
+    {
+      "platform": "Facebook",
+      "url": "https://facebook.com/blackstoneprotective",
+      "icon": "f"
+    }
+  ]
+}

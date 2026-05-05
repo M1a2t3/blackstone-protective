@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "title_line1": "Protecting What",
+    "title_accent": "Matters Most",
+    "subtitle": "Blackstone Protective Service Ltd delivers elite uniformed guarding, executive close protection, and electronic security solutions — built on discipline, integrity, and precision.",
+    "cta_primary_text": "Book a Consultation",
+    "cta_primary_url": "/booking.html",
+    "cta_secondary_text": "Explore Services",
+    "cta_secondary_url": "#services",
+    "hero_image": "/images/uploads/hero-bg.png",
+    "hero_image_alt": "Blackstone security operatives in formation"
+  },
+  "services_section": {
+    "overline": "Our Capabilities",
+    "title": "Comprehensive Security Solutions",
+    "subtitle": "Five integrated service pillars, each staffed by vetted, trained professionals — engineered to eliminate risk at every level."
+  },
+  "services": [
+    {
+      "id": "manned-guarding",
+      "badge": "Core Service",
+      "icon": "🛡️",
+      "title": "Manned Guarding & Physical Security",
+      "description": "Our core service delivers professional, disciplined security personnel for 24/7 protection. Static/On-Site Guarding: Trained guards for offices, residential estates, industrial facilities, banks, schools, hospitals, and construction sites (unarmed or armed options where permitted). Mobile Patrols: Vehicle and foot patrols for estates, commercial zones, and high-risk areas to deter threats and ensure rapid response. Estate & Residential Security: Comprehensive perimeter control, access management, visitor screening, and community protection for gated estates and private homes. Corporate & Industrial Security: Robust protection for warehouses, factories, oil & gas sites, and business premises.",
+      "image": "/images/uploads/manned-guarding-dog-muzzle.jpeg",
+      "image_alt": "German Shepherd K9 security unit with muzzle"
+    },
+    {
+      "id": "executive-protection",
+      "badge": "Premium",
+      "icon": "👔",
+      "title": "Executive & Personal Protection",
+      "description": "We provide discreet, high-level security for individuals who require close protection. VIP & Executive Close Protection: Professional bodyguards and protection teams for high-net-worth individuals, executives, and dignitaries. Armed Escorts & Journey Management: Secure transportation and escorts for personnel, cash-in-transit, and valuable assets across Lagos and beyond. Family & Personal Security Details: Customized protection plans for families and individuals in high-risk environments.",
+      "image": "/images/uploads/executive-protection-car-door.jpeg",
+      "image_alt": "Suited operative opening a car door for executive protection"
+    },
+    {
+      "id": "event-security",
+      "badge": "Events",
+      "icon": "🎯",
+      "title": "Event Security & Crowd Management",
+      "description": "Make your events safe, seamless, and memorable with professional security support. Event Security: Trained personnel for weddings, concerts, corporate conferences, parties, product launches, and public gatherings. Crowd Control & Access Management: Efficient screening, traffic control, and on-site coordination to prevent incidents. Special Event Risk Assessment: Pre-event planning and real-time management.",
+      "image": "/images/uploads/about-city-security-digital.jpeg",
+      "image_alt": "City skyline with security shield overlays representing event security"
+    },
+    {
+      "id": "electronic-security",
+      "badge": "Technology",
+      "icon": "📡",
+      "title": "Electronic & Technology-Driven Security",
+      "description": "Leverage modern systems for smarter, more efficient protection. CCTV Surveillance Systems: Installation, 24/7 monitoring, and maintenance of high-definition cameras with remote access and recording. Alarm Systems & Rapid Response: Intrusion detection, panic buttons, and immediate armed/unarmed response teams. Access Control Solutions: Biometric scanners, smart cards, RFID systems, turnstiles, and automated gates. Integrated Security Platforms: Centralized control room combining CCTV, alarms, GPS tracking, and analytics for real-time threat management.",
+      "image": "/images/uploads/electronic-security-cctv-lock.jpeg",
+      "image_alt": "CCTV camera with digital lock overlay for electronic security"
+    },
+    {
+      "id": "security-consulting",
+      "badge": "Specialist",
+      "icon": "📋",
+      "title": "Security Consulting & Specialized Services",
+      "description": "Beyond physical presence, we help you build long-term resilience. Security Risk Assessment & Consultancy: Thorough threat analysis, vulnerability audits, and development of comprehensive security strategies. Security Training Programs: Customized training for your staff or our operatives in conflict de-escalation, first aid, customer service, and advanced techniques. Background Checks & Investigations: Professional employee vetting, due diligence, and private investigations. Fire Safety & Emergency Preparedness: Fire prevention audits, equipment supply, and basic emergency response planning.",
+      "image": "/images/uploads/electronic-security-dome-cctv.jpeg",
+      "image_alt": "Dome CCTV camera on a pole against a glass building"
+    }
+  ],
+  "about_preview": {
+    "overline": "Who We Are",
+    "title": "A Legacy of Trust, Built on the Ground",
+    "body1": "Founded with a single mandate — to protect what matters most — Blackstone Protective Service Ltd has grown into one of Nigeria's most respected security organisations. We combine rigorous training, modern technology, and an unwavering commitment to duty.",
+    "body2": "Our operatives are not just guards; they are professionals who understand that every client represents a responsibility. We don't merely secure spaces — we build trust.",
+    "pillars": [
+      { "icon": "✅", "title": "NIS Licensed", "body": "Fully licensed and compliant with Nigeria's security industry regulations." },
+      { "icon": "📋", "title": "Rigorous Vetting", "body": "Multi-stage background checks on every operative before deployment." },
+      { "icon": "🎓", "title": "Ongoing Training", "body": "Continuous professional development and quarterly tactical drills." },
+      { "icon": "📞", "title": "Rapid Response", "body": "Dedicated control room ensuring response within minutes." }
+    ],
+    "cta_text": "Our Full Story",
+    "cta_url": "/about.html",
+    "image": "/images/uploads/about-security-badge.jpeg",
+    "image_alt": "Blackstone security operative in black uniform"
+  },
+  "cta_banner": {
+    "title": "Ready to Secure Your World?",
+    "subtitle": "Speak with a security specialist today. We assess your risk, design a bespoke solution, and deploy within 72 hours.",
+    "cta_primary_text": "Book a Consultation",
+    "cta_primary_url": "/booking.html",
+    "cta_secondary_text": "Call Us Now",
+    "cta_secondary_url": "tel:09019724219"
+  }
+}

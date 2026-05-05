@@ -1,0 +1,354 @@
+# ============================================================
+# Sveltia CMS Configuration — Blackstone Protective Service Ltd
+# Docs: https://github.com/sveltia/sveltia-cms
+# GitHub Pages deployment with GitHub backend
+# ============================================================
+
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME   # e.g. johndoe/blackstone-protective
+  branch: main
+  base_url: https://sveltia-cms-auth.pages.dev  # Sveltia's hosted OAuth proxy
+
+# Where uploaded media files are stored
+media_folder: images/uploads
+public_folder: /images/uploads
+
+# Site URL for preview links
+site_url: https://blackstoneprotective.com
+display_url: https://blackstoneprotective.com
+logo_url: /images/uploads/logo.png
+
+# Output all content as JSON (Sveltia CMS uses json format)
+# All files below map to the /data/ folder
+
+collections:
+
+  # ─────────────────────────────────────────────
+  # GLOBAL SETTINGS (Singleton)
+  # ─────────────────────────────────────────────
+  - name: global
+    label: "⚙️ Global Settings"
+    description: "Site-wide settings — logo, contact info, nav links, footer."
+    files:
+      - name: global
+        label: Global Settings
+        file: data/global.json
+        format: json
+        fields:
+          - { label: "Site Name",       name: site_name,  widget: string }
+          - { label: "Logo Image",      name: logo_image, widget: image,
+              hint: "Recommended: PNG with transparent background, min 200px tall." }
+          - { label: "Logo Alt Text",   name: logo_alt,   widget: string }
+          - { label: "Tagline",         name: tagline,    widget: string }
+          - { label: "Phone",           name: phone,      widget: string }
+          - { label: "Email",           name: email,      widget: string }
+          - { label: "Address",         name: address,    widget: string }
+          - { label: "WhatsApp Number", name: whatsapp,   widget: string,
+              hint: "International format without spaces, e.g. +2348000000000" }
+          - label: "Navigation Links"
+            name: nav_links
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: URL,   name: url,   widget: string }
+              - { label: ID,    name: id,    widget: string }
+          - label: "Trust Bar Items"
+            name: trust_items
+            widget: list
+            fields:
+              - { label: Icon (emoji), name: icon, widget: string }
+              - { label: Text,         name: text, widget: string }
+          - { label: "Footer Tagline",  name: footer_tagline,  widget: string }
+          - { label: "Footer Copyright",name: footer_copyright, widget: string }
+          - label: "Social Links"
+            name: social_links
+            widget: list
+            fields:
+              - { label: Platform, name: platform, widget: string }
+              - { label: URL,      name: url,      widget: string }
+              - { label: Icon,     name: icon,     widget: string }
+
+  # ─────────────────────────────────────────────
+  # HOME PAGE (Singleton)
+  # ─────────────────────────────────────────────
+  - name: home
+    label: "🏠 Home Page"
+    description: "All content on the home page — hero, stats, services, about preview, CTA banner."
+    files:
+      - name: home
+        label: Home Page
+        file: data/home.json
+        format: json
+        fields:
+          # Hero
+          - label: "Hero Section"
+            name: hero
+            widget: object
+            fields:
+              - { label: "Badge Text",          name: badge_text,       widget: string }
+              - { label: "Title Line 1",         name: title_line1,      widget: string }
+              - { label: "Title Accent (gold)",  name: title_accent,     widget: string }
+              - { label: "Subtitle",             name: subtitle,         widget: text }
+              - { label: "Primary CTA Text",     name: cta_primary_text, widget: string }
+              - { label: "Primary CTA URL",      name: cta_primary_url,  widget: string }
+              - { label: "Secondary CTA Text",   name: cta_secondary_text, widget: string }
+              - { label: "Secondary CTA URL",    name: cta_secondary_url,  widget: string }
+              - { label: "Hero Background Image",name: hero_image,       widget: image }
+              - { label: "Hero Image Alt Text",  name: hero_image_alt,   widget: string }
+          # Stats
+          - label: "Hero Statistics"
+            name: stats
+            widget: list
+            fields:
+              - { label: Value, name: value, widget: string }
+              - { label: Label, name: label, widget: string }
+          # Services section header
+          - label: "Services Section Header"
+            name: services_section
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+          # Service cards
+          - label: "Service Cards"
+            name: services
+            widget: list
+            fields:
+              - { label: ID,          name: id,          widget: string,
+                  hint: "URL-safe slug, e.g. manned-guarding" }
+              - { label: Badge,       name: badge,       widget: string }
+              - { label: Icon (emoji),name: icon,        widget: string }
+              - { label: Title,       name: title,       widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image,       name: image,       widget: image }
+              - { label: Image Alt,   name: image_alt,   widget: string }
+          # About preview
+          - label: "About Preview Section"
+            name: about_preview
+            widget: object
+            fields:
+              - { label: Overline,         name: overline,          widget: string }
+              - { label: Title,            name: title,             widget: string }
+              - { label: "Body Paragraph 1", name: body1,           widget: text }
+              - { label: "Body Paragraph 2", name: body2,           widget: text }
+              - { label: "Years Experience", name: years_experience, widget: string }
+              - { label: "Years Label",      name: years_label,      widget: string }
+              - label: "Value Pillars"
+                name: pillars
+                widget: list
+                fields:
+                  - { label: Icon (emoji), name: icon,  widget: string }
+                  - { label: Title,        name: title, widget: string }
+                  - { label: Body,         name: body,  widget: text }
+              - { label: "CTA Button Text", name: cta_text, widget: string }
+              - { label: "CTA Button URL",  name: cta_url,  widget: string }
+              - { label: "Section Image",   name: image,    widget: image }
+              - { label: "Image Alt Text",  name: image_alt, widget: string }
+          # CTA banner
+          - label: "CTA Banner"
+            name: cta_banner
+            widget: object
+            fields:
+              - { label: Title,              name: title,             widget: string }
+              - { label: Subtitle,           name: subtitle,          widget: text }
+              - { label: "Primary CTA Text", name: cta_primary_text,  widget: string }
+              - { label: "Primary CTA URL",  name: cta_primary_url,   widget: string }
+              - { label: "Secondary CTA Text", name: cta_secondary_text, widget: string }
+              - { label: "Secondary CTA URL",  name: cta_secondary_url,  widget: string }
+
+  # ─────────────────────────────────────────────
+  # ABOUT PAGE (Singleton)
+  # ─────────────────────────────────────────────
+  - name: about
+    label: "ℹ️ About Us Page"
+    description: "Mission, Vision, Values, company story, and Why Choose Blackstone."
+    files:
+      - name: about
+        label: About Us Page
+        file: data/about.json
+        format: json
+        fields:
+          - label: "Page Hero"
+            name: page_hero
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+          - { label: "Opening Paragraph", name: opening_paragraph, widget: text,
+              hint: "Main introductory paragraph at the top of the About page." }
+          - label: "Who We Are Section"
+            name: who_we_are
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Body,  name: body,  widget: text }
+              - { label: "Image 1 (Security Badge)",   name: image,      widget: image }
+              - { label: "Image 1 Alt Text",           name: image_alt,  widget: string }
+              - { label: "Image 2 (Arms Crossed)",     name: image2,     widget: image }
+              - { label: "Image 2 Alt Text",           name: image2_alt, widget: string }
+          - label: "Mission"
+            name: mission
+            widget: object
+            fields:
+              - { label: Icon (emoji), name: icon,  widget: string }
+              - { label: Title,        name: title, widget: string }
+              - { label: Body,         name: body,  widget: text }
+          - label: "Vision"
+            name: vision
+            widget: object
+            fields:
+              - { label: Icon (emoji), name: icon,  widget: string }
+              - { label: Title,        name: title, widget: string }
+              - { label: Body,         name: body,  widget: text }
+          - label: "Values"
+            name: values
+            widget: object
+            fields:
+              - { label: Icon (emoji), name: icon,  widget: string }
+              - { label: Title,        name: title, widget: string }
+              - { label: Body,         name: body,  widget: text }
+          - label: "Company Story Section"
+            name: story_section
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - { label: Title,    name: title,    widget: string }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - { label: Image,     name: image,     widget: image }
+              - { label: Image Alt, name: image_alt, widget: string }
+          - label: "Why Choose Blackstone"
+            name: why_choose
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: "Number (e.g. 01)", name: number, widget: string }
+                  - { label: Title,              name: title,  widget: string }
+                  - { label: Body,               name: body,   widget: text }
+          - { label: "Closing Paragraph", name: closing_paragraph, widget: text,
+              hint: "The final paragraph shown below the Why Choose section." }
+
+  # ─────────────────────────────────────────────
+  # CAREERS PAGE (Singleton)
+  # ─────────────────────────────────────────────
+  - name: careers
+    label: "💼 Careers Page"
+    description: "Job listings, application form options, and employee value proposition."
+    files:
+      - name: careers
+        label: Careers Page
+        file: data/careers.json
+        format: json
+        fields:
+          - label: "Page Hero"
+            name: page_hero
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+              - { label: "Careers Hero Image", name: hero_image, widget: image,
+                  hint: "Full-width image displayed below the page hero on the Careers page." }
+              - { label: "Careers Hero Image Alt", name: hero_image_alt, widget: string }
+          - label: "Section Intro"
+            name: intro
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Body,  name: body,  widget: text }
+          - label: "Job Listings"
+            name: jobs
+            widget: list
+            fields:
+              - { label: "ID (slug)",    name: id,       widget: string }
+              - { label: Title,          name: title,    widget: string }
+              - { label: Type,           name: type,     widget: string,
+                  hint: "e.g. Full-Time, Part-Time, Contract" }
+              - { label: Location,       name: location, widget: string, default: "Lagos" }
+              - label: Requirements
+                name: requirements
+                widget: list
+                field: { label: Requirement, name: requirement, widget: string }
+          - label: "Application Form Settings"
+            name: form_section
+            widget: object
+            fields:
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+              - label: "Position Options (dropdown)"
+                name: position_options
+                widget: list
+                field: { label: Position, name: position, widget: string }
+          - label: "Employee Benefits Strip"
+            name: values_strip
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Icon (emoji), name: icon,  widget: string }
+                  - { label: Title,        name: title, widget: string }
+                  - { label: Body,         name: body,  widget: text }
+
+  # ─────────────────────────────────────────────
+  # BOOKING PAGE (Singleton)
+  # ─────────────────────────────────────────────
+  - name: booking
+    label: "📋 Booking / Contact Page"
+    description: "Consultation booking form content and info panel."
+    files:
+      - name: booking
+        label: Booking Page
+        file: data/booking.json
+        format: json
+        fields:
+          - label: "Page Hero"
+            name: page_hero
+            widget: object
+            fields:
+              - { label: Overline, name: overline, widget: string }
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+          - label: "Info Panel"
+            name: info
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Body,  name: body,  widget: text }
+              - label: Features
+                name: features
+                widget: list
+                fields:
+                  - { label: Icon (emoji), name: icon,  widget: string }
+                  - { label: Title,        name: title, widget: string }
+                  - { label: Body,         name: body,  widget: text }
+              - { label: "Contact Label", name: contact_label, widget: string }
+              - { label: "Phone",         name: phone,         widget: string }
+              - { label: "Email",         name: email,         widget: string }
+          - label: "Form Settings"
+            name: form
+            widget: object
+            fields:
+              - { label: Title,    name: title,    widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+              - label: "Service Options (dropdown)"
+                name: services
+                widget: list
+                field: { label: Service, name: service, widget: string }
+              - label: "Urgency Options (dropdown)"
+                name: urgency_options
+                widget: list
+                field: { label: Option, name: option, widget: string }

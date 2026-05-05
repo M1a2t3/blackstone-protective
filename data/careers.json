@@ -1,0 +1,96 @@
+{
+  "page_hero": {
+    "overline": "Join Our Team",
+    "title": "Build Your Career in Professional Security",
+    "subtitle": "We are always looking for disciplined, motivated professionals to join Nigeria's most respected security organisation. If you have integrity, commitment, and the drive to protect — we want to hear from you.",
+    "hero_image": "/images/uploads/careers-security-operative.jpeg",
+    "hero_image_alt": "Male security operative in black jacket with sunglasses and earpiece, arms crossed"
+  },
+  "intro": {
+    "title": "Current Openings",
+    "body": "Click on any role below to pre-select it in the application form. We review all applications on a rolling basis."
+  },
+  "jobs": [
+    {
+      "id": "security-guard",
+      "icon": "🛡️",
+      "title": "Security Guards (ex military that was honourably discharged)",
+      "type": "Full-Time",
+      "location": "Lagos",
+      "level": "Entry–Mid Level",
+      "description": "We are seeking ex-military personnel who have been honourably discharged to join our team as professional security guards. Applicants must be physically fit, disciplined, and committed to maintaining the highest standards of security.",
+      "requirements": ["Honourable discharge from military service", "Valid ID documents", "No criminal record", "Physically fit and alert"]
+    },
+    {
+      "id": "supervisor",
+      "icon": "⭐",
+      "title": "Supervisor",
+      "type": "Full-Time",
+      "location": "Lagos",
+      "level": "Mid Level",
+      "description": "Lead and coordinate teams of security operatives across client sites. Responsible for shift management, incident reporting, and quality assurance on daily operations.",
+      "requirements": ["Minimum 3 years security experience", "Leadership experience", "Strong written reporting skills", "Computer literate"]
+    },
+    {
+      "id": "human-resources",
+      "icon": "👥",
+      "title": "Human Resources",
+      "type": "Full-Time",
+      "location": "Lagos",
+      "level": "Mid Level",
+      "description": "Support the HR department in recruitment screening, onboarding, personnel records management, disciplinary procedures, and staff welfare. Security sector HR experience is a strong advantage.",
+      "requirements": ["BSc/HND in Human Resources or related field", "2+ years HR experience", "Proficiency in MS Office", "Excellent interpersonal skills"]
+    },
+    {
+      "id": "sales-executives",
+      "icon": "📈",
+      "title": "Sales Executives",
+      "type": "Full-Time",
+      "location": "Lagos",
+      "level": "Mid Level",
+      "description": "Drive new business acquisition for security contracts across corporate, government, and residential segments. Prepare proposals, negotiate contracts, and manage client relationships through the sales cycle.",
+      "requirements": ["3+ years B2B sales experience", "Security or FM sector knowledge preferred", "Strong presentation skills", "Track record of hitting targets"]
+    },
+    {
+      "id": "marketer",
+      "icon": "📣",
+      "title": "Marketer (must be a female that can drive)",
+      "type": "Full-Time",
+      "location": "Lagos",
+      "level": "Mid Level",
+      "description": "Manage Blackstone's brand presence across digital and traditional channels. Must be female and hold a valid driver's licence. Responsibilities include social media management, content creation, email campaigns, and event coordination.",
+      "requirements": ["Female applicants only", "Valid driver's licence", "BSc in Marketing, Communications, or related field", "2+ years marketing experience"]
+    },
+    {
+      "id": "drivers",
+      "icon": "🚗",
+      "title": "Drivers",
+      "type": "Full-Time",
+      "location": "Lagos",
+      "level": "Entry Level",
+      "description": "Provide professional driving services for executive protection assignments and company logistics. Must demonstrate defensive driving capability, local route knowledge, and absolute discretion.",
+      "requirements": ["Valid driver's licence (minimum class B)", "5+ years commercial driving experience", "Clean driving record", "Professional appearance and conduct"]
+    }
+  ],
+  "form_section": {
+    "title": "Apply Now",
+    "subtitle": "Complete the form below. All fields marked with * are required. Shortlisted candidates will be contacted within 7 working days.",
+    "position_options": [
+      "Security Guards (ex military that was honourably discharged)",
+      "Supervisor",
+      "Human Resources",
+      "Sales Executives",
+      "Marketer (must be a female that can drive)",
+      "Drivers"
+    ]
+  },
+  "values_strip": {
+    "overline": "Life at Blackstone",
+    "items": [
+      { "icon": "💰", "title": "Competitive Remuneration", "body": "Market-aligned salaries reviewed annually." },
+      { "icon": "📚", "title": "Continuous Training", "body": "Access to professional development programmes." },
+      { "icon": "🏥", "title": "HMO Coverage", "body": "Health insurance for you and your dependants." },
+      { "icon": "📈", "title": "Career Progression", "body": "Structured paths from operative to management." }
+    ]
+  }
+}

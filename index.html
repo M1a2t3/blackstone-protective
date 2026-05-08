@@ -271,6 +271,10 @@
           <span class="icon">📍</span>
           <span id="footer-address">No 9 Atunrase Street, Surulere, Lagos State, Nigeria</span>
         </div>
+        <div class="footer-contact-item" id="footer-address-intl-wrap" style="display:none;">
+          <span class="icon">📍</span>
+          <span id="footer-address-intl"></span>
+        </div>
       </div>
     </div>
 
@@ -309,6 +313,13 @@
     document.getElementById('footer-email').textContent = global.email;
     document.getElementById('footer-email').href = `mailto:${global.email}`;
     document.getElementById('footer-address').textContent = global.address;
+    // International office address — shown only when set in CMS
+    if (global.address_international) {
+      const intlWrap = document.getElementById('footer-address-intl-wrap');
+      const intlEl   = document.getElementById('footer-address-intl');
+      intlEl.textContent = 'International Office: ' + global.address_international;
+      if (intlWrap) intlWrap.style.display = '';
+    }
     document.getElementById('footer-tagline').textContent = global.footer_tagline;
     document.getElementById('footer-copy').textContent = global.footer_copyright;
 

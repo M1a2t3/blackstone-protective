@@ -1,5 +1,6 @@
 {
   "hero": {
+    "badge_text": "Blackstone Protective",
     "title_line1": "Protecting What",
     "title_accent": "Matters Most",
     "subtitle": "Blackstone Protective Service Ltd delivers elite uniformed guarding, executive close protection, and electronic security solutions — built on discipline, integrity, and precision.",
@@ -7,7 +8,7 @@
     "cta_primary_url": "/booking.html",
     "cta_secondary_text": "Explore Services",
     "cta_secondary_url": "#services",
-    "hero_image": "/images/uploads/hero-bg.png",
+    "hero_image": "/images/uploads/48321.png",
     "hero_image_alt": "Blackstone security operatives in formation"
   },
   "services_section": {
@@ -68,10 +69,26 @@
     "body1": "Founded with a single mandate — to protect what matters most — Blackstone Protective Service Ltd has grown into one of Nigeria's most respected security organisations. We combine rigorous training, modern technology, and an unwavering commitment to duty.",
     "body2": "Our operatives are not just guards; they are professionals who understand that every client represents a responsibility. We don't merely secure spaces — we build trust.",
     "pillars": [
-      { "icon": "✅", "title": "NIS Licensed", "body": "Fully licensed and compliant with Nigeria's security industry regulations." },
-      { "icon": "📋", "title": "Rigorous Vetting", "body": "Multi-stage background checks on every operative before deployment." },
-      { "icon": "🎓", "title": "Ongoing Training", "body": "Continuous professional development and quarterly tactical drills." },
-      { "icon": "📞", "title": "Rapid Response", "body": "Dedicated control room ensuring response within minutes." }
+      {
+        "icon": "✅",
+        "title": "NIS Licensed",
+        "body": "Fully licensed and compliant with Nigeria's security industry regulations."
+      },
+      {
+        "icon": "📋",
+        "title": "Rigorous Vetting",
+        "body": "Multi-stage background checks on every operative before deployment."
+      },
+      {
+        "icon": "🎓",
+        "title": "Ongoing Training",
+        "body": "Continuous professional development and quarterly tactical drills."
+      },
+      {
+        "icon": "📞",
+        "title": "Rapid Response",
+        "body": "Dedicated control room ensuring response within minutes."
+      }
     ],
     "cta_text": "Our Full Story",
     "cta_url": "/about.html",
